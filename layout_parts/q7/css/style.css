@@ -1,5 +1,75 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
+.clearfix:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.textbox-float {
+  box-sizing: border-box;
+  width: 225px;
+  margin-left: 50px;
+  float: left;
+}
+
+.textbox-float:first-child {
+  margin-left: 0px;
+}
+
+.text-table{
+  display: table;
+}
+
+.text-table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.text-table-cell:nth-child(2) {
+  float: right;
+}
+
+.text-table-cell_inner {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 225px;
+}
+
+.inline-textbox {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 225px;
+  vertical-align: middle;
+}
+
+.inline-textbox:nth-child(2){
+  margin-left: 45px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.flex-item {
+  box-sizing: border-box;
+  width: 225px;
+}
+
+.fixed-box {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 300px;
+}
+
+.variable-box {
+  display: inline-block;
+  box-sizing: border-box;
+  padding-left: 350px;
+  margin-left: -300px;
+}
 
 /* 回答はここに書いてね */

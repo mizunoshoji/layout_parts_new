@@ -1,5 +1,79 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
+.container{
+  position: relative;
+  overflow: hidden;
+  width: 500px;
+  height: 333px;
+  margin: 0 auto;
+}
 
+.container:hover .text_box {
+  margin-bottom: 320px;
+  transition: all 0.5s 0s ease;
+}
+
+.inner_img {
+  height: 333px;
+  background: url(http://gizumo-inc.github.io/sample/front-lesson/layout_parts_new/assets/img/q9/thumb.jpg)
+}
+
+.inner_img:hover {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),
+  url(http://gizumo-inc.github.io/sample/front-lesson/layout_parts_new/assets/img/q9/thumb.jpg);
+  transform: scale(1.5);
+  transition-property: all;          /*適用対象のproperty*/
+  transition-duration: 0.5s;         /*変化にかかる時間*/
+  transition-delay: 0s;              /*開始遅れ*/
+  transition-timing-function: ease;  /*イージング機能　変化の進行速度調整*/
+}
+
+.text_box {
+  position: absolute;
+  pointer-events: none;
+  width:460px;
+  bottom: -300px;
+  left:20px;
+  word-break: break-all;
+}
+
+.inner_text {
+  font-size: 16px;
+  line-height: 16px;
+  color: #fff;
+}
+
+/* Q9-2 animation */
+.circle {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border: solid 10px #ecf1f2;
+  border-top: solid 10px #00bcd4;
+  border-radius: 50%;
+  animation-name: rotation;
+  animation-duration: 1s; /* 開始から終了までの所要時間*/
+  animation-timing-function: linear;  /*一定の速度*/
+  animation-delay: 0s;
+  animation-iteration-count: infinite; /*繰り返し回数*/
+}
+
+/* Animations */
+@keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+       -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+         -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+       -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+         -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
 /* 回答はここに書いてね */
