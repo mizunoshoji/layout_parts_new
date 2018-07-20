@@ -2,11 +2,11 @@
 
 /* 回答はここに書いてね */
 .contents_area {
-box-sizing: border-box;
-width: 940px;
-margin: 0px auto;
-padding: 20px;
-background-color: #eff3f4;
+  box-sizing: border-box;
+  width: 940px;
+  margin: 0px auto;
+  padding: 20px;
+  background-color: #eff3f4;
 }
 
 .content_inner_text {

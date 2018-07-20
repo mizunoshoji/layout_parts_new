@@ -1,18 +1,18 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
+.clearfix:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
 .contents_area {
   box-sizing: border-box;
   width: 940px;
   margin: 0 auto;
   padding: 20px;
   background-color: #eff3f4;
-}
-
-.clearfix:after {
-display: block;
-clear: both;
-content: "";
 }
 
 .content {

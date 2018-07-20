@@ -18,7 +18,7 @@
   margin-left: 0px;
 }
 
-.text-table{
+.text-table {
   display: table;
 }
 
@@ -27,7 +27,7 @@
   vertical-align: middle;
 }
 
-.text-table-cell:nth-child(2) {
+.text-table-cell:last-child {
   float: right;
 }
 
@@ -44,7 +44,7 @@
   vertical-align: middle;
 }
 
-.inline-textbox:nth-child(2){
+.inline-textbox:last-child {
   margin-left: 45px;
 }
 
@@ -59,17 +59,25 @@
   width: 225px;
 }
 
+.parent-inline-block {
+  font-size: 0px;
+}
+
 .fixed-box {
   display: inline-block;
   box-sizing: border-box;
   width: 300px;
+  vertical-align: top;
+  font-size: 16px;
 }
 
 .variable-box {
   display: inline-block;
   box-sizing: border-box;
-  padding-left: 350px;
+  width: 100%;
   margin-left: -300px;
+  padding-left: 350px;
+  font-size: 16px;
 }
 
 /* 回答はここに書いてね */

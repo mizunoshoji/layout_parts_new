@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
-table {
+/*クラス名つけて！*/
+.table-breakfast {
   table-layout: fixed;
   width: 100%;
   text-align: center;

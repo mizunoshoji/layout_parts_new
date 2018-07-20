@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
-.container{
+.container {
   position: relative;
   overflow: hidden;
   width: 500px;
@@ -15,30 +15,34 @@
 }
 
 .inner_img {
-  height: 333px;
-  background: url(http://gizumo-inc.github.io/sample/front-lesson/layout_parts_new/assets/img/q9/thumb.jpg)
-}
-
-.inner_img:hover {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),
-  url(http://gizumo-inc.github.io/sample/front-lesson/layout_parts_new/assets/img/q9/thumb.jpg);
-  transform: scale(1.5);
   transition-property: all;          /*適用対象のproperty*/
   transition-duration: 0.5s;         /*変化にかかる時間*/
   transition-delay: 0s;              /*開始遅れ*/
   transition-timing-function: ease;  /*イージング機能　変化の進行速度調整*/
 }
 
+.inner_img:hover {
+  transform: scale(1.5);
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-delay: 0s;
+  transition-timing-function: ease;
+}
+
 .text_box {
   position: absolute;
   pointer-events: none;
-  width:460px;
-  bottom: -300px;
-  left:20px;
+  width: 500px;
+  height: 333px;
+  bottom: -320px;
   word-break: break-all;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+  transition: all 0.5s 0s ease;
 }
 
 .inner_text {
+  width: 460px;
+  margin: 201px 0px 0px 20px;
   font-size: 16px;
   line-height: 16px;
   color: #fff;
@@ -76,4 +80,5 @@
             transform: rotate(360deg);
   }
 }
+
 /* 回答はここに書いてね */
