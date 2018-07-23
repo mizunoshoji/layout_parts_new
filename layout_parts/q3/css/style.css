@@ -8,7 +8,7 @@
   text-align: center;
 }
 
-th {
+.table-breakfast th {
   padding: 10px;
   border: solid #dedede 1px;
   background-color: #2244aa;
@@ -17,25 +17,25 @@ th {
   color: #FFFFFF;
 }
 
-td {
+.table-breakfast td {
   padding: 10px;
   border: solid #dedede 1px;
   font-size: 16px;
   line-height: 22px;
 }
 
-td:first-child {
+.table-breakfast td:first-child {
   background-color: #2244aa;
   font-size: 18px;
   line-height: 26px;
   color: #FFFFFF;
 }
 
-tr:nth-child(2n+1) {
+.table-breakfast tr:nth-child(2n+1) {
   background-color: #ecf1f2;
 }
 
-tr:last-child {
+.table-breakfast tr:last-child {
   border-top: 2px dashed #000;
 }
 
