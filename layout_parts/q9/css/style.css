@@ -10,7 +10,11 @@
 }
 
 .container:hover .text_box {
-  margin-bottom: 333px;
+  bottom: 0px;
+}
+
+.container:hover .inner_img {
+  transform: scale(1.5);
 }
 
 .inner_img {
@@ -18,10 +22,6 @@
   transition-duration: 0.5s;         /*変化にかかる時間*/
   transition-delay: 0s;              /*開始遅れ*/
   transition-timing-function: ease;  /*イージング機能　変化の進行速度調整*/
-}
-
-.inner_img:hover {
-  transform: scale(1.5);
 }
 
 .text_box {
